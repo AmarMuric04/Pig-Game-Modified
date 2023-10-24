@@ -33,7 +33,7 @@ btnHold.addEventListener("click", function () {
   document.getElementById(`score--${activePlayer}`).textContent = scores[
     activePlayer
   ] += currentScore;
-  if (scores[0] >= 1 || scores[1] >= 1) {
+  if (scores[0] >= 100 || scores[1] >= 100) {
     document.getElementById(`score--${activePlayer}`).textContent = "You win";
     document
       .querySelector(`.player--${activePlayer}`)
@@ -77,10 +77,10 @@ btnNew.addEventListener("click", function () {
 function timeout() {
   clearTimeout(timeoutId);
   document.querySelector(".alert").classList.remove("hidden");
-  document.querySelector(".alert1060").classList.remove("hidden");
+  document.querySelector(".alert1060").classList.remove("hidden1060");
   timeoutId = setTimeout(function () {
     document.querySelector(".alert").classList.add("hidden");
-    document.querySelector(".alert1060").classList.add("hidden");
+    document.querySelector(".alert1060").classList.add("hidden1060");
   }, 1000);
 }
 
