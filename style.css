@@ -10,9 +10,7 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
-.alert1060 {
-  display: none;
-}
+
 body {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
@@ -38,7 +36,9 @@ main {
   overflow: hidden;
   display: flex;
 }
-
+.alertMedia {
+  display: none;
+}
 .player {
   flex: 50%;
   padding: 9rem;
@@ -201,6 +201,7 @@ main {
     display: none;
   }
   .alert1060 {
+    display: block;
     position: absolute;
     top: 55vh;
     left: 50%;

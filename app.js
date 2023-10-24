@@ -77,10 +77,12 @@ btnNew.addEventListener("click", function () {
 function timeout() {
   clearTimeout(timeoutId);
   document.querySelector(".alert").classList.remove("hidden");
-  document.querySelector(".alert1060").classList.remove("hidden1060");
+  document.querySelector(".alertMedia").classList.remove("hidden1060");
+  document.querySelector(".alertMedia").classList.add("alert1060");
   timeoutId = setTimeout(function () {
     document.querySelector(".alert").classList.add("hidden");
-    document.querySelector(".alert1060").classList.add("hidden1060");
+    document.querySelector(".alertMedia").classList.add("hidden1060");
+    document.querySelector(".alertMedia").classList.remove("alert1060");
   }, 1000);
 }
 
