@@ -19,7 +19,7 @@ diceImage.classList.add("hidden");
 btnRoll.addEventListener("click", function () {
   const dice = Math.trunc(Math.random() * 6) + 1;
   diceImage.classList.remove("hidden");
-  diceImage.src = `/dices/dice-${dice}-modified.png`;
+  diceImage.src = `./dices/dice-${dice}-modified.png`;
   if (dice !== 1) {
     currentScore += dice;
     document.getElementById(`current--${activePlayer}`).textContent =
